@@ -22,7 +22,7 @@ $(function () {
         var profile = data.profile;
         console.log(profile);
         // sett profile
-        $(display).children('img').attr("src",profile.image_url)
+        $(display).children('.profile-image-js').css("background-image",`url(${profile.image_url})`)
         $(display).children().children('h2').text(profile.name)
 
         // set other details
