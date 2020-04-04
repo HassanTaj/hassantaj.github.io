@@ -1,0 +1,12 @@
+.w3-text-black, .w3-hover-text-black:hover {
+    color: #0b0b0b!important;
+    width: 100%;
+    background: white;
+    border-bottom: 2px solid #009688f7;
+    padding: 5px 15px;
+}
+
+.w3-display-container {
+    position: relative;
+    margin: 0px 0px 15px 0px;
+}

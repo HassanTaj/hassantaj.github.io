@@ -1,0 +1,78 @@
+{
+    "profile" : {
+        "name":"Hassan Taj",
+        "image_url":"https://cdn.discordapp.com/attachments/695838950597722205/695839190289743892/IMG_20200226_155245asd.jpg",
+        "designation":"Software Developer",
+        "address":"Lahore, Pakistan",
+        "email":"leehaisen01@gmail.com",
+        "phone":"+92 3249845044",
+        "experiences": [
+            {
+                "designation":"Full Stack Software Developer",
+                "company":"Douxl Technologies",
+                "from":"Aug 2019",
+                "to":"Feb 2020",
+                "isCurrent":true,
+                "description":"At Douxl Technologies, i helped the organization improve their current code applications, implementation of coding standards and design patterns that were neccessary. Here i had a great experience of working on a Finance ERP and a Garage Management System along with my team, the enviroment was friendly and we had flexable timings which enabled me to work flexably."
+            },
+            {
+                "designation":"Junior Software Developer",
+                "company":"Cybersoft North America Inc",
+                "from":"Jan 2019",
+                "to":"Jul 2019",
+                "isCurrent":false,
+                "description":"During my time at Cybersoft, i learned a lot working on different projects, i worked on projects which were ETS transprot, Generalized CMS, Xamarin App for CMS Rendering, working on all these projects helped me get a better understanding of Google Maps APIs, Angular 4-8, WPF app developement, Asp.Net Core Web Apis and Asp.Net MVC apps"
+            },
+            {
+                "designation":"Associate Software Engineer",
+                "company":"5A Technologies",
+                "from":"Jan 2017",
+                "to":"Oct 2018",
+                "isCurrent":false,
+                "description":"At 5A Technologies i was appointed as Associate Software Engineer where i began my career as a Asp.NET MVC Web Developer, here my mentor and lead taught me a lot about .net stuff, how to write quality code. I also was able to work on different projects which Included some Basic Web Apps, i was given an oppertunity to work on some modules of a Finance ERP system."
+            }
+        ],
+        "education_history":[
+            {
+                "school_name":"Virtual Univesity Of Pakistan",
+                "from":"2014",
+                "to":"2018",
+                "description":"Bachelor Degree"
+            },
+            {
+                "school_name":"Garrison Degree Boys Collage",
+                "from":"2014",
+                "to":"2012",
+                "description":"Intermediate"
+            }
+        ],
+        "skills":[
+            {
+                "name":"C#",
+                "score":90
+            },
+            {
+                "name":"Asp.Net MVC",
+                "score":90
+            },
+            {
+                "name":"TS",
+                "score":80
+            },
+            {
+                "name":"MSSQL Server",
+                "score":60
+            }
+        ],
+        "languages":[
+            {
+                "name":"Urdu",
+                "score":100
+            },
+            {
+                "name":"English",
+                "score":90
+            }
+        ]
+    }
+}
