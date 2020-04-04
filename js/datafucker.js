@@ -13,6 +13,7 @@ $(function () {
     languages = ".languages-js";
     exps =".experiences-js";
     education = ".education-js"
+    about = ".about-js";
 
     $.ajax({
         url: 'data/profile.json',
@@ -25,6 +26,7 @@ $(function () {
         $(display).children().children('h2').text(profile.name)
 
         // set other details
+        $(about).text(profile.about);
         $(personaldetails).html(getPersonalDetailsTemplate(profile))
         $(skills).html(RenderList(profile.skills,consts.skills));
         $(languages).html(RenderList(profile.languages,consts.languages));
