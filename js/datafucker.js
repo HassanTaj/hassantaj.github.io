@@ -14,6 +14,8 @@ $(function () {
     exps =".experiences-js";
     education = ".education-js"
     about = ".about-js";
+    pagetitle = "#page-title-js";
+    fav = "#fav";
 
     $.ajax({
         url: 'data/profile.json',
@@ -21,10 +23,12 @@ $(function () {
     }).done(function (data) {
         var profile = data.profile;
         console.log(profile);
+
         // sett profile
         $(display).children('.profile-image-js').css("background-image",`url(${profile.image_url})`)
+        $(pagetitle).text(profile.name)
+        $(fav).attr("href",profile.favicon)
         $(display).children().children('h2').text(profile.name)
-
         // set other details
         $(about).text(profile.about);
         $(personaldetails).html(getPersonalDetailsTemplate(profile))
