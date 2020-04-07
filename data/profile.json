@@ -1,7 +1,7 @@
 {
     "profile" : {
         "name":"Hassan Taj",
-        "favicon":"https://cdn.discordapp.com/attachments/695838950597722205/696066037417902130/b975dc6dbcee91e806a3056189a0f033.png",
+        "favicon":"https://cdn.discordapp.com/attachments/567401045022474430/697064942792081538/Perspective-V-Logo.png",
         "image_url":"https://cdn.discordapp.com/attachments/695838950597722205/695839190289743892/IMG_20200226_155245asd.jpg",
         "designation":"Software Developer",
         "address":"Lahore, Pakistan",
@@ -50,19 +50,23 @@
         ],
         "skills":[
             {
+                "id":"csharp",
                 "name":"C#",
                 "score":90
             },
             {
-                "name":"Asp.Net MVC",
+                "id":"dotnet",
+                "name":"Asp.Net",
                 "score":90
             },
             {
+                "id":"ts",
                 "name":"TS",
                 "score":80
             },
             {
-                "name":"MSSQL Server",
+                "id":"mssql",
+                "name":"MSSQL",
                 "score":60
             }
         ],
