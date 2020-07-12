@@ -1,114 +1,272 @@
 <!DOCTYPE html>
-<html>
-<title id="page-title-js">Hassan Taj</title>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title id="page-title-js"></title>
+	<link id="fav" rel="shortcut icon" href="./theme/assets/images/favicons/favicon.png" type="image/png">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link id="fav" rel="icon" type="image/x-icon" href="#">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
-<link rel="stylesheet" href="css/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="css/overrides.css" />
-<style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Roboto", sans-serif
-    }
-</style>
-
-<body class="w3-light-grey">
-
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-            <!-- Left Column -->
-            <div class="w3-third">
-
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container display-js display-bg">
-                        <!-- <img src="" style="width:100%" alt="Avatar"> -->
-                        <div class="profile-image-js profile-image"></div>
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                            <h2></h2>
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <span class="person-details-js"></span>
-                        <hr>
-
-                        <p class="w3-large"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-                        <span class="skills-js"></span>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                        <span class="languages-js"></span>
-                        <br>
-                    </div>
-                </div><br>
-
-                <!-- End Left Column -->
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./theme/assets/styles/style.css"/>
+	<link rel="stylesheet" type="text/css" href="./theme/assets/styles/style-dark.css"/>
+    <link rel="stylesheet" type="text/css" href="./theme/assets/demo/style-demo.css"/>
+	
+	<!-- Mapbox-->
+    <link rel="stylesheet" href="css/overrides-v2.css">
+	
+</head>
+<body class="bg-triangles">
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
             </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
 
-            <!-- Right Column -->
-            <div class="w3-twothird">
+    <main class="main">
+	    <div class="container gutter-top">
+		    <div class="row sticky-parent">
+			    <!-- Sidebar -->
+                <aside class="col-12 col-md-12 col-xl-3">
+				    <div class="sidebar box shadow pb-0 sticky-column">
+						<svg class="avatar avatar--180" viewBox="0 0 188 188">
+                            <g class="avatar__box">
+                                <image class="profile-pic-js" xlink:href="./theme/assets/img/avatar-1.jpg" height="100%" width="100%" />
+                            </g>
+                        </svg>
+						<div class="text-center">
+						    <h3 class="title title--h3 sidebar__user-name"><span class="weight--500 firstName-js"></span> <span class="lastName-js"></span></h3>
+							<div class="badge badge--dark designation-js"></div>
+							
+							<!-- Social -->
+		                    <div class="social">
+		                        <a class="social__link" href="https://www.facebook.com/leehaisen01" target="_blank"><i class="font-icon icon-facebook"></i></a>
+		                        <!-- <a class="social__link" href="https://www.behance.com/"><i class="font-icon icon-twitter"></i></a> -->
+		                        <a class="social__link" href="https://www.linkedin.com/in/hassan-taj/" target="_blank"><i class="font-icon icon-linkedin2"></i></a>
+		                    </div>
+						</div>
+						
+						<div class="sidebar__info box-inner box-inner--rounded">
+		                    <ul class="contacts-block">
+					            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
+							        <i class="font-icon icon-calendar"></i><span class="dob-js"></span>
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Address">
+							        <i class="font-icon icon-location"></i><span class="address-js"></span>
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
+							        <a href="mailto:example@mail.com"><i class="font-icon icon-envelope"></i><span class="emaail-js"></span></a>
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
+							        <i class="font-icon icon-phone"></i><span class="phone-js"></span>
+							    </li>
+						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
+							        <a href="skype:skype-example"><i class="font-icon icon-skype"></i><span class="skype-js"></span></a>
+							    </li>
+					        </ul>
+							
+							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
+						</div>
+					</div>	
+		        </aside>
+		        
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-xl-9">
+				    <div class="box shadow pb-0">
+			            <div class="content">
+						    <div id="about-tab" class="tabcontent active">
+					            <!-- ABOUT -->
+						        <div class="pb-0 pb-sm-2">
+                                    <h1 class="title title--h1 first-title title__separate">About Me</h1>
+                                    <p class="about-js"></p>
+					            </div>
+						
+						        <!-- What -->
+						        <div class="box-inner pb-0">
+						            <h2 class="title title--h3">What I'm Doing</h2>
+							        <div class="row">
+							            <!-- Case Item -->
+							            <div class="col-12 col-lg-6">
+							                <div class="case-item box box__second">
+									            <img class="case-item__icon" src="./theme/assets/icons/icon-design.svg" alt="" />
+										        <div>
+									                <h3 class="title title--h5">Web Design</h3>
+										            <p class="case-item__caption">The most modern and high-quality design made at a professional level.</p>
+										        </div>	
+									        </div>
+								        </div>
+								
+								        <!-- Case Item -->
+								        <div class="col-12 col-lg-6">
+							                <div class="case-item box box__second">
+									            <img class="case-item__icon" src="./theme/assets/icons/icon-dev.svg" alt="" />
+										        <div>
+									                <h3 class="title title--h5">Web Development</h3>
+										            <p class="case-item__caption">High-quality development of sites at the professional level.</p>
+										        </div>
+									        </div>
+								        </div>
+								
+								        <!-- Case Item -->
+								        <div class="col-12 col-lg-6">
+								            <div class="case-item box box__second">
+								                <img class="case-item__icon" src="./theme/assets/icons/icon-app.svg" alt="" />
+										        <div>
+								                    <h3 class="title title--h5">Mobile Apps</h3>
+									                <p class="case-item__caption">Professional development of applications for iOS and Android.</p>
+										        </div>
+								            </div>
+								        </div>
+								
+								        <!-- Case Item -->
+								        <div class="col-12 col-lg-6">
+								            <div class="case-item box box__second">
+									            <img class="case-item__icon" src="./theme/assets/icons/icon-app.svg" alt="" />
+										        <div>
+									                <h3 class="title title--h5">Hybrid Apps With Xamarin</h3>
+										            <p class="case-item__caption">I make high-quality hybrid apps of any category at a professional level.</p>
+										        </div>
+									        </div>
+								        </div>
+							        </div>	
+						        </div>
+						    </div>
+							
+							<!-- RESUME -->
+							<div id="resume-tab" class="tabcontent">
+						        <div class="pb-3">
+		                            <h1 class="title title--h1 first-title title__separate">Resume</h1>
+					            </div>
+						
+						        <!-- Experience -->
+						        <div class="pb-0">
+							        <div class="row">
+							            <div class="col-12 col-lg-6">
+								            <h2 class="title title--h3"><img class="title-icon" src="./theme/assets/icons/icon-education.svg" alt="" /> Education</h2>
+									        <div class="timeline education-js">
+									        </div>	
+								        </div>
+								
+							            <div class="col-12 col-lg-6">
+								            <h2 class="title title--h3"><img class="title-icon" src="./theme/assets/icons/icon-experience.svg" alt="" /> Experience</h2>
+									        <div class="timeline experiences-js">
+									        </div>
+								        </div>
+							        </div>
+						        </div>
+						
+						        <!-- Skills -->
+						        <div class="box-inner box-inner--rounded">
+						            <div class="row">
+							            <div class="col-12 col-lg-6">
+						                    <h2 class="title title--h3">Coding Skills</h2>
+									        <div class="box box__second skills-js">
+									            <!-- Progress -->
+                                            </div>
+										
+                                        </div>
+								
+							            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+						                    <h2 class="title title--h3">&nbsp;</h2>
+									        <div class="box box__second">
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Android Developement</span><span>70%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Android Developement</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>Javascript</span><span>70%</span></div>
+											        </div>
+											        <div class="progress-text"><span>Javascript</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>HTML</span><span>100%</span></div>
+											        </div>
+											        <div class="progress-text"><span>HTML</span></div>
+                                                </div>
+										
+									            <!-- Progress -->
+									            <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+											            <div class="progress-text"><span>SCSS</span><span>30%</span></div>
+											        </div>
+											        <div class="progress-text"><span>SCSS</span></div>
+                                                </div>
+									        </div>
+                                        </div>
+							        </div>
+						        </div>
+							</div>
+							
+							<!-- CONTACT -->
+							<div id="contact-tab" class="tabcontent">
+							    <div class="pb-2">
+		                            <h1 class="title title--h1 first-title title__separate">Contact</h1>
+					            </div>							
+						        <form id="contact-form" class="contact-form" data-toggle="validator">
+                                    <div class="row">
+				                        <div class="form-group col-12 col-md-6">
+									        <i class="font-icon icon-user"></i>
+                                            <input type="text" class="input input__icon form-control" id="nameContact" name="nameContact" placeholder="Full name" required="required" autocomplete="on" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')">
+								            <div class="help-block with-errors"></div>
+				                        </div>
+				                        <div class="form-group col-12 col-md-6">
+									        <i class="font-icon icon-envelope"></i>
+                                            <input type="email" class="input input__icon form-control" id="emailContact" name="emailContact" placeholder="Email address" required="required" autocomplete="on" oninvalid="setCustomValidity('Email is incorrect')" onkeyup="setCustomValidity('')">
+								            <div class="help-block with-errors"></div>
+				                        </div>
+				                        <div class="form-group col-12 col-md-12">
+                                            <textarea class="textarea form-control" id="messageContact" name="messageContact" placeholder="Your Message"  rows="4" required="required" oninvalid="setCustomValidity('Fill in the field')" onkeyup="setCustomValidity('')"></textarea>
+								            <div class="help-block with-errors"></div>
+				                        </div>
+						            </div>
+							        <div class="row">
+				                        <div class="col-12 col-md-6 order-2 order-md-1 text-center text-md-left">
+					                        <div id="validator-contact" class="hidden"></div>
+				                        </div>
+				                        <div class="col-12 col-md-6 order-1 order-md-2 text-right">
+					                        <button type="submit" class="btn"><i class="font-icon icon-send"></i> Send Message</button>
+				                        </div>
+			                        </div>
+		                        </form>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Footer -->
+					<footer class="footer">© 2020 Hassan Taj</footer>
+		        </div>
+			</div>
+		</div>	
+    </main>
 
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About
-                    </h2>
-                    <p class="about-js" style="padding: 0px 16px 16px 16px;"></p>
-                </div>
 
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
-                    </h2>
-                    <span class="experiences-js"></span>
-                </div>
+    <!-- SVG masks -->
+    <svg class="svg-defs">
+        <clipPath id="avatar-box">
+            <path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"/>
+        </clipPath>
+        <clipPath id="avatar-hexagon">
+             <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"/>
+        </clipPath>		
+    </svg>
 
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
-                    </h2>
-                    <span class="education-js"></span>
-                </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
-        </div>
-
-        <!-- End Page Container -->
-    </div>
-
-    <footer class="w3-container w3-teal w3-center w3-margin-top" style="padding:12px;">
-        <strong>Do not improvise what you can not Handle</strong>
-        <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-        <!-- <p>Powered by <a href="default.html" target="_blank">w3.css</a></p> -->
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
-    <script src="js/datafucker.js"></script>
+	<!-- JavaScripts -->
+	<script src="./theme/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./theme/assets/js/plugins.min.js"></script>
+    <script src="./theme/assets/js/common.js"></script>
+    <script src="js/profile.v2.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,7 @@
+class Resume {
+    constructor(
+        name,
+    ) {
+
+    }
+}

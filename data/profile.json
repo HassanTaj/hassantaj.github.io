@@ -1,11 +1,15 @@
 {
     "profile" : {
         "name":"Hassan Taj",
+        "first":"Hassan",
+        "last":"Taj",
         "favicon":"https://cdn.discordapp.com/attachments/567401045022474430/697064942792081538/Perspective-V-Logo.png",
         "image_url":"https://cdn.discordapp.com/attachments/695838950597722205/695839190289743892/IMG_20200226_155245asd.jpg",
         "designation":"Software Developer",
         "address":"Lahore, Pakistan",
+        "dob":"28 May, 1996",
         "email":"hassantaj01@outlook.com",
+        "skype":"hassantaj66",
         "phone":"+92 3249845044",
         "about":"I'm a self-motivated, tech enthusiast with good communication skills, I look forward to learn new technologies and set a mark in the market. I currently have a good understanding of Full Stack Web development with Asp.net MVC/Core 2.x WebAPI and have worked with ERP, CMS, Google Maps api, Block chain and Crypto wallet integration.",
         "experiences": [
@@ -46,6 +50,12 @@
                 "from":"2014",
                 "to":"2012",
                 "description":"Intermediate"
+            },
+            {
+                "school_name":"FG Fazaia Secondary School",
+                "from":"2012",
+                "to":"2006",
+                "description":"Metric"
             }
         ],
         "skills":[
@@ -56,7 +66,7 @@
             },
             {
                 "id":"dotnet",
-                "name":"Asp.Net",
+                "name":"Asp.Net MVC / Core 2.x",
                 "score":90
             },
             {
