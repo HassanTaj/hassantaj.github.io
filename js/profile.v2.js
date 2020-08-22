@@ -33,6 +33,7 @@ $(function () {
         $(".emaail-js").text(profile.email)
         $(".phone-js").text(profile.phone)
         $(".skype-js").text(profile.skype)
+        $('.time-js').text(new Date().getFullYear())
 
         // sett profile
         $(display).children('.profile-image-js').css("background-image", `url(${profile.image_url})`)
