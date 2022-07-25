@@ -1,39 +1,62 @@
 $(function () {
-
     const consts = {
+        what_i_am_doing: "whatiamdoing",
         skills: "skills",
         languages: "languages",
         experiences: "experiences",
         education: "education",
+        projects: "projects",
+        certifications: "certifications"
     };
 
-    display = ".display-js";
-    personaldetails = ".person-details-js";
-    skills = ".skills-js";
-    languages = ".languages-js";
-    exps = ".experiences-js";
-    education = ".education-js"
-    about = ".about-js";
-    pagetitle = "#page-title-js";
-    desig = ".designation-js"
-    fav = "#fav";
+    fetch('https://graph.perspective-v.com/api/resume', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "*/*"
+        },
+        body: JSON.stringify({
+            query: `query getMyResume($token:String!){
+                    getbyaccesstoken(accesToken:$token){
+                      name,
+                      jsonData
+                    }
+                  }`,
+            variables: {
+                token: 'b8wwVT4ElkGP+pHe37QkWg=='
+            }
+        })
+    }).then(res => res.json()).then(body => {
+        console.log(body);
+        var data = JSON.parse(body.data.getbyaccesstoken.jsonData);
+        initProfile(data.profile);
+    });
 
-    $.ajax({
-        url: 'data/profile.json',
-        method: 'GET',
-    }).done(function (data) {
-        var profile = data.profile;
-        console.log(profile);
+    function initProfile(profile) {
+        display = ".display-js";
+        personaldetails = ".person-details-js";
+        skills = ".skills-js";
+        languages = ".languages-js";
+        exps = ".experiences-js";
+        education = ".education-js"
+        about = "#about-js";
+        pagetitle = "#page-title-js";
+        desig = ".designation-js"
+        fav = "#fav";
+        projects = "#prjects-js";
+        resumeLink = '#resume-download-js';
+        whatImDoing = '#whatimdoing-js';
 
-        $(".profile-pic-js").attr("xlink:href", profile.image_url);
-        $(".firstName-js").text(profile.first)
-        $(".lastName-js").text(profile.last)
-        $(".dob-js").text(profile.dob)
-        $(".address-js").text(profile.address)
-        $(".emaail-js").text(profile.email)
-        $(".phone-js").text(profile.phone)
-        $(".skype-js").text(profile.skype)
-        $('.time-js').text(new Date().getFullYear())
+        $("#profile-pic-js").attr("xlink:href", profile.image_url);
+        $("#firstName-js").text(profile.first)
+        $("#lastName-js").text(profile.last)
+        $("#dob-js").text(profile.dob)
+        $("#address-js").text(profile.address)
+        $("#email-js").text(profile.email)
+        $("#phone-js").text(profile.phone)
+        $("#skype-js").text(profile.skype)
+        $("#resume-download-js").attr('href', profile.resume_donload_url)
+        $('#time-js').text(new Date().getFullYear())
 
         // sett profile
         $(display).children('.profile-image-js').css("background-image", `url(${profile.image_url})`)
@@ -61,17 +84,18 @@ $(function () {
         //     dial.parent().css({"margin":"0px 8px"})
         // });
 
+        // what i am doing template
+        // $(whatImDoing).html(RenderList(profile.whatImDoing, consts.what_i_am_doing));
+
         // languages
         $(languages).html(RenderList(profile.languages, consts.languages));
 
         // work exp
-        $(exps).html(RenderList(profile.experiences, consts.experiences))
+        $(exps).html(RenderList(profile.experiences, consts.experiences));
 
         // education 
-        $(education).html(RenderList(profile.education_history, consts.education))
-    }).fail(function (a, b, error) {
-
-    });
+        $(education).html(RenderList(profile.education_history, consts.education));
+    }
 
     function getPersonalDetailsTemplate(p) {
         return `<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>${p.designation}</p>
@@ -95,6 +119,9 @@ $(function () {
             if (template === consts.education) {
                 res += getEducationTemplate(e);
             }
+            if (template === consts.what_i_am_doing) {
+                res += getWhatImDoingTemplate(e);
+            }
         });
         return res;
     }
@@ -109,7 +136,8 @@ $(function () {
             <div class="progress-text"><span>${e.name}</span><span>${e.score}%</span></div>
         </div>
         <div class="progress-text"><span>${e.name}</span></div>
-    </div>`; `<p>${e.name}</p>
+    </div>`;
+        `<p>${e.name}</p>
         <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:${e.score}%">${e.score}%</div>
         </div>`;
@@ -137,6 +165,18 @@ $(function () {
         <span class="timeline__period">${e.from} — ${e.to}</span>
         <p class="timeline__description">${e.description}</p>
     </article>`;
+    }
+
+    function getWhatImDoingTemplate(e) {
+        return `<div class="col-12 col-lg-6">
+        <div class="case-item box box__second">
+            <span class="case-item__icon"> <i class="${e.iconCss}"></i></span>
+            <div>
+                <h3 class="title title--h5">${e.title}</h3>
+                <p class="case-item__caption">${e.detail}</p>
+            </div>	
+        </div>
+    </div>`;
     }
 
 });

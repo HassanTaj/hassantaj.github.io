@@ -1,3 +1,7 @@
+// Scroll bar--------------------------
+$thumb: #304CFD;
+$track: #302C40;
+
 ::-webkit-scrollbar {
   width: 15px;
   height: 5px;
@@ -5,15 +9,14 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 2px #302C40;
-          box-shadow: inset 0 0 2px #302C40;
-  background: #302C40;
+  box-shadow: inset 0 0 2px $track; //#f2f2f2;
+  background: $track;
   border-radius: 1.5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #304CFD;
+  background: $thumb;
   border-radius: 1.5px;
   width: 15px;
 }
@@ -25,16 +28,19 @@ div::-webkit-scrollbar {
 
 /* Track */
 div::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 2px #302C40;
-          box-shadow: inset 0 0 2px #302C40;
-  background: #302C40;
+  box-shadow: inset 0 0 2px $track;
+  background: $track;
   border-radius: 0px;
 }
 
 /* Handle */
 div::-webkit-scrollbar-thumb {
-  background: #304CFD;
+  background: $thumb;
   border-radius: 1.5px;
   width: 15px;
 }
-/*# sourceMappingURL=overrides-v2.css.map */
+
+.case-item__icon {
+  font-size: 2rem !important;
+  color: $thumb !important;
+}

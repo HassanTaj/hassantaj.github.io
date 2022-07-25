@@ -1,3 +1,7 @@
+
+/**
+ * @typedef {object} Profile
+ */
 class Profile {
     constructor(
         name,
@@ -13,6 +17,5 @@ class Profile {
         skills,
         languages
     ){
-
     }
 }

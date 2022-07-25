@@ -9,8 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="./theme/assets/styles/style.css"/>
 	<link rel="stylesheet" type="text/css" href="./theme/assets/styles/style-dark.css"/>
     <link rel="stylesheet" type="text/css" href="./theme/assets/demo/style-demo.css"/>
+
+	<link rel="stylesheet" href="./css/font-awesome/4.7.0/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/regular.min.css" integrity="sha512-YoxvmIzlVlt4nYJ6QwBqDzFc+2aXL7yQwkAuscf2ZAg7daNQxlgQHV+LLRHnRXFWPHRvXhJuBBjQqHAqRFkcVw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/svg-with-js.min.css" integrity="sha512-U7WyVKwgyoYSa+qowujpUQIH3omU6SlFFr8m6kiEuuM1lWqoiURgTNskMFEf1la4PDNQzMws/G1u0wKGNxVbcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/v5-font-face.min.css" integrity="sha512-wVffp1z2cYYhxt8nhif5UsMu415VRqX2CkMeWg5lYyrcpFBLfoMQ6ngVSJG8BumKBl83wf2bMRDwVmTgfoDovQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Mapbox-->
-    <link rel="stylesheet" href="css/overrides-v2.css">
+    <link rel="stylesheet" href="css/overrides.min.css">
 	
 </head>
 <body class="bg-triangles">
@@ -33,17 +42,16 @@
 				    <div class="sidebar box shadow pb-0 sticky-column">
 						<svg class="avatar avatar--180" viewBox="0 0 188 188">
                             <g class="avatar__box">
-                                <image class="profile-pic-js" xlink:href="./theme/assets/img/avatar-1.jpg" height="100%" width="100%" />
+                                <image id="profile-pic-js" xlink:href="#" height="100%" width="100%" />
                             </g>
                         </svg>
 						<div class="text-center">
-						    <h3 class="title title--h3 sidebar__user-name"><span class="weight--500 firstName-js"></span> <span class="lastName-js"></span></h3>
+						    <h3 class="title title--h3 sidebar__user-name"><span class="weight--500" id="firstName-js"></span> <span id="lastName-js"></span></h3>
 							<div class="badge badge--dark designation-js"></div>
 							
 							<!-- Social -->
 		                    <div class="social">
 		                        <a class="social__link" href="https://www.facebook.com/leehaisen01" target="_blank"><i class="font-icon icon-facebook"></i></a>
-		                        <!-- <a class="social__link" href="https://www.behance.com/"><i class="font-icon icon-twitter"></i></a> -->
 		                        <a class="social__link" href="https://www.linkedin.com/in/hassan-taj/" target="_blank"><i class="font-icon icon-linkedin2"></i></a>
 		                    </div>
 						</div>
@@ -51,23 +59,23 @@
 						<div class="sidebar__info box-inner box-inner--rounded">
 		                    <ul class="contacts-block">
 					            <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Birthday">
-							        <i class="font-icon icon-calendar"></i><span class="dob-js"></span>
+							        <i class="font-icon icon-calendar"></i><span id="dob-js"></span>
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Address">
-							        <i class="font-icon icon-location"></i><span class="address-js"></span>
+							        <i class="font-icon icon-location"></i><span id="address-js"></span>
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="E-mail">
-							        <a href="mailto:example@mail.com"><i class="font-icon icon-envelope"></i><span class="emaail-js"></span></a>
+							        <a href="mailto:example@mail.com"><i class="font-icon icon-envelope"></i><span id="email-js"></span></a>
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Phone">
-							        <i class="font-icon icon-phone"></i><span class="phone-js"></span>
+							        <i class="font-icon icon-phone"></i><span id="phone-js"></span>
 							    </li>
 						        <li class="contacts-block__item" data-toggle="tooltip" data-placement="top" title="Skype">
-							        <a href="skype:skype-example"><i class="font-icon icon-skype"></i><span class="skype-js"></span></a>
+							        <a href="skype:skype-example"><i class="font-icon icon-skype"></i><span id="skype-js"></span></a>
 							    </li>
 					        </ul>
 							
-							<a class="btn" href="#"><i class="font-icon icon-download"></i> Download CV</a>
+							<a class="btn" id="resume-download-js" href="#"><i class="font-icon icon-download"></i> Download CV</a>
 						</div>
 					</div>	
 		        </aside>
@@ -80,17 +88,18 @@
 					            <!-- ABOUT -->
 						        <div class="pb-0 pb-sm-2">
                                     <h1 class="title title--h1 first-title title__separate">About Me</h1>
-                                    <p class="about-js"></p>
+                                    <p id="about-js"></p>
 					            </div>
 						
 						        <!-- What -->
 						        <div class="box-inner pb-0">
 						            <h2 class="title title--h3">What I'm Doing</h2>
-							        <div class="row">
+							        <section class="row" id="whatimdoing-js">
 							            <!-- Case Item -->
 							            <div class="col-12 col-lg-6">
 							                <div class="case-item box box__second">
-									            <img class="case-item__icon" src="./theme/assets/icons/icon-design.svg" alt="" />
+									            <!-- <img class="case-item__icon" src="./theme/assets/icons/icon-design.svg" alt="" /> -->
+									            <span class="case-item__icon"> <i class="fa-regular fa-user"></i></span>
 										        <div>
 									                <h3 class="title title--h5">Web Design</h3>
 										            <p class="case-item__caption">The most modern and high-quality design made at a professional level.</p>
@@ -130,7 +139,7 @@
 										        </div>
 									        </div>
 								        </div>
-							        </div>	
+							        </section>	
 						        </div>
 						    </div>
 							
@@ -208,12 +217,12 @@
 						        </div>
 							</div>
 							
-							<!-- CONTACT -->
-							<div id="contact-tab" class="tabcontent">
+							<!-- projects -->
+							<div id="prjects-js" class="tabcontent">
 							    <div class="pb-2">
-		                            <h1 class="title title--h1 first-title title__separate">Contact</h1>
+		                            <h1 class="title title--h1 first-title title__separate">Projects</h1>
 					            </div>							
-						        <form id="contact-form" class="contact-form" data-toggle="validator">
+						        <!-- <form id="contact-form" class="contact-form" data-toggle="validator">
                                     <div class="row">
 				                        <div class="form-group col-12 col-md-6">
 									        <i class="font-icon icon-user"></i>
@@ -238,14 +247,14 @@
 					                        <button type="submit" class="btn"><i class="font-icon icon-send"></i> Send Message</button>
 				                        </div>
 			                        </div>
-		                        </form>
+		                        </form> -->
 							</div>
 							
 						</div>
 					</div>
 					
 					<!-- Footer -->
-					<footer class="footer">© <span class="time-js"></span> Hassan Taj</footer>
+					<footer class="footer">© <span id="time-js"></span> Hassan Taj</footer>
 		        </div>
 			</div>
 		</div>	
@@ -266,6 +275,13 @@
 	<script src="./theme/assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./theme/assets/js/plugins.min.js"></script>
     <script src="./theme/assets/js/common.js"></script>
-    <script src="js/profile.v2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/brands.min.js" integrity="sha512-KGeeDLRAGeJZYsq3J/4s/X6eZyaxTAlScSN2b7z/H/r2MBZ3pAg4T52SzavEJa2Uthmll5HMhvRaLeuxT76EVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/conflict-detection.min.js" integrity="sha512-uf3F0AGh2mKjvRADOUBQMavmoKTm92Ud1tsRu4PZqltqjbP+ZYj+5i3ph6EE7Oto4hkpFPr6DEVlbw47i5SlAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js" integrity="sha512-5qbIAL4qJ/FSsWfIq5Pd0qbqoZpk5NcUVeAAREV2Li4EKzyJDEGlADHhHOSSCw0tHP7z3Q4hNHJXa81P92borQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/regular.min.js" integrity="sha512-eH31QC2/CLTAQpugtCMQh/w68mbefCbaDTsSbmqOk86RICy523PnuNMaFfQ5cAkwwJ1dsnn7OUt8bfkF24zprg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/solid.min.js" integrity="sha512-C92U8X5fKxCN7C6A/AttDsqXQiB7gxwvg/9JCxcqR6KV+F0nvMBwL4wuQc+PwCfQGfazIe7Cm5g0VaHaoZ/BOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/profile.handler.js"></script>
 </body>
 </html>
