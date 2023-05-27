@@ -460,7 +460,7 @@
 		success: 'valid',
 		submitHandler: function() {
 			$.ajax({
-				url: 'mailer/feedback.php',
+				url: 'https://formspree.io/f/xpzeekaq',
 				type: 'post',
 				dataType: 'json',
 				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),

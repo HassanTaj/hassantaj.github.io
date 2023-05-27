@@ -16,23 +16,23 @@ const App = function () {
                             opacity: '0',
                             translateY: '-40px'
                         }, {
-                            duration: 400,
+                            duration: 100,
                             complete: function(){
                                 preload.find('.box-1').velocity({
                                     translateY: '-100%'
                                 }, {
-                                    duration: 1000,
+                                    duration: 500,
                                     easing: [0.7,0,0.3,1]
                                 });
                                 preload.find('.box-2').velocity({
                                     translateY: '-100%'
                                 }, {
-                                    duration: 400,
+                                    duration: 100,
                                     easing: [0.7,0,0.3,1]
                                 });
                             }
                         });
-                    }, 1000);
+                    }, 500);
             
                     /*
                         Typed Subtitle
@@ -453,7 +453,7 @@ const App = function () {
                 success: 'valid',
                 submitHandler: function() {
                     $.ajax({
-                        url: 'mailer/feedback.php',
+                        url: 'https://formspree.io/f/xpzeekaq',
                         type: 'post',
                         dataType: 'json',
                         data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
