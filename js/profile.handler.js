@@ -9,7 +9,7 @@ $(function () {
         certifications: "certifications"
     };
 
-    fetch('https://api.perspective-v.com/gateway/graph/resume', {
+    fetch('https://api.perspective-v.com/graph/resume', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
