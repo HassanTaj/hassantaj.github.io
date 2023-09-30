@@ -17,7 +17,7 @@ $(function () {
         },
         body: JSON.stringify({
             query: `query getMyResume($token:String!){
-                    getbyaccesstoken(accesToken:$token){
+                getByAccessToken(accesToken:$token){
                       name,
                       htmlTemplate,
                       jsonData
