@@ -28,16 +28,13 @@ $(function () {
             }
         })
     }).then(res => res.json()).then(body => {
-        console.log(body);
         var data = JSON.parse(body.data.getByAccessToken.jsonData);
         var template = JSON.parse(body.data.getByAccessToken.htmlTemplate);
         var tokens = Object.keys(data);
         var arrayDataToAppend = [];
         if (!!tokens.length) {
             Array.from(tokens).forEach(token => {
-                console.log(token);
                 template = template.replaceAll(`#${token}#`, data[token])
-
                 if (data[token] instanceof Array) {
                     arrayDataToAppend.push(token);
                 }
