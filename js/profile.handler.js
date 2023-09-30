@@ -29,8 +29,8 @@ $(function () {
         })
     }).then(res => res.json()).then(body => {
         console.log(body);
-        var data = JSON.parse(body.data.getbyaccesstoken.jsonData);
-        var template = JSON.parse(body.data.getbyaccesstoken.htmlTemplate);
+        var data = JSON.parse(body.data.getByAccessToken.jsonData);
+        var template = JSON.parse(body.data.getByAccessToken.htmlTemplate);
         var tokens = Object.keys(data);
         var arrayDataToAppend = [];
         if (!!tokens.length) {
