@@ -9,23 +9,14 @@ $(function () {
         certifications: "certifications"
     };
 
-    fetch('https://api.perspective-v.com/graph/resume', {
+    fetch('https://api.perspective-v.com/graph/v1/resume/GetByAccessToken', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
             "Accept": "*/*"
         },
-        body: JSON.stringify({
-            query: `query getMyResume($token:String!){
-                getByAccessToken(accesToken:$token){
-                      name,
-                      htmlTemplate,
-                      jsonData
-                    }
-                  }`,
-            variables: {
-                token: '/vw5Hk1jLkGiBjvnd5xS+g=='
-            }
+        body: JSON.stringify({ 
+            accessToken: '/vw5Hk1jLkGiBjvnd5xS+g=='
         })
     }).then(res => res.json()).then(body => {
         var data = JSON.parse(body.data.getByAccessToken.jsonData);
