@@ -15,7 +15,7 @@ $(function () {
             "Content-Type": "application/json",
             "Accept": "*/*"
         },
-        body: JSON.stringify('/vw5Hk1jLkGiBjvnd5xS+g==')
+        body:'/vw5Hk1jLkGiBjvnd5xS+g=='
     })
     .then(res => res.json())
     .then(body => {
