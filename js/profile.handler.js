@@ -20,7 +20,7 @@ $(function () {
     .then(res => res.json())
     .then(response => {
         var data = JSON.parse(response.content.jsonData);
-        var template = JSON.parse(response.content.htmlTemplate);
+        var template = response.content.htmlTemplate;
         var tokens = Object.keys(data);
         var arrayDataToAppend = [];
         if (!!tokens.length) {
