@@ -21,7 +21,7 @@ $(function () {
     .then(response => {
         var data = JSON.parse(response.content.jsonData);
         var template = JSON.parse(response.content.htmlTemplate);
-        var tokens = Object.keys(response.content);
+        var tokens = Object.keys(data);
         var arrayDataToAppend = [];
         if (!!tokens.length) {
             Array.from(tokens).forEach(token => {
