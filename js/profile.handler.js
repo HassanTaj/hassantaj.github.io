@@ -18,10 +18,10 @@ $(function () {
         body: JSON.stringify("/vw5Hk1jLkGiBjvnd5xS+g==")
     })
     .then(res => res.json())
-    .then(body => {
-        var data = JSON.parse(body.data.getByAccessToken.jsonData);
-        var template = JSON.parse(body.data.getByAccessToken.htmlTemplate);
-        var tokens = Object.keys(data);
+    .then(response => {
+        var data = JSON.parse(response.content.jsonData);
+        var template = JSON.parse(response.content.htmlTemplate);
+        var tokens = Object.keys(response.content);
         var arrayDataToAppend = [];
         if (!!tokens.length) {
             Array.from(tokens).forEach(token => {
