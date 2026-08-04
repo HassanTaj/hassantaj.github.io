@@ -2,7 +2,7 @@
     "name": "Hassan Taj",
     "firstName": "Hassan",
     "lastName": "Taj",
-    "subname": "Platform Engineering & Cloud Architecture",
+    "subname": "Senior Software Engineer | Solutions Architecture",
     "profileImage": "./data/profile.webp",
     "discord_url": "",
     "github_url": "https://github.com/HassanTaj",
@@ -13,14 +13,15 @@
     "address": "Lahore, Pakistan",
     "residence": "Pakistan",
     "freelance": "",
-    "overview": "Senior Software Engineer and Microsoft Certified Azure Solutions Architect Expert focused on platform engineering, cloud architecture, identity, distributed systems, and the modernization of enterprise software.",
-    "about_intro": "I have 7+ years of experience delivering enterprise applications, cloud solutions, and modernization initiatives. My work has evolved from building individual features to designing the platforms, integrations, and engineering practices that enable teams to deliver reliable software.",
-    "about_tech": "My implementation background is primarily in .NET, Angular, React, and TypeScript, supported by experience with Azure, AWS, microservices, GraphQL, gRPC, API gateways, databases, containers, CI/CD, and modern identity standards.",
-    "about_desc": "I care about the full lifecycle of a system: architecture, security, deployment, observability, recovery, documentation, and developer experience. I also explore specification-driven and AI-assisted workflows that improve engineering quality without replacing sound technical judgment.",
+    "overview": "Senior Software Engineer and Microsoft Certified Azure Solutions Architect Expert delivering enterprise applications with .NET, Angular, and React while expanding into solution architecture, cloud modernization, identity, and platform engineering.",
+    "about_intro": "I have 7+ years of experience building and modernizing enterprise software. My work spans hands-on application delivery, technical leadership, system and application architecture, API and database design, cloud migration planning, and direct collaboration with clients and stakeholders.",
+    "about_tech": "My core implementation stack is C#, .NET, ASP.NET Core, Angular, React, and TypeScript. I also work with Azure, AWS, GraphQL, REST, gRPC, microservices, relational and document databases, containers, CI/CD, and modern authentication standards.",
+    "about_desc": "I care about the complete lifecycle of a solution: requirements, architecture, maintainable implementation, security, deployment, observability, recovery, documentation, and developer experience. My personal engineering work extends this into reusable application foundations and self-hosted platform operations.",
     "subtitles": [
         "Senior Software Engineer",
-        "Platform Engineering",
-        "Cloud Architecture",
+        ".NET, Angular & React",
+        "Solutions Architecture",
+        "Cloud & Platform Engineering",
         "Identity & Access Management",
         "Distributed Systems",
         "AI-Assisted Engineering"
@@ -28,39 +29,39 @@
     "experiences": [
         {
             "title": "Senior Software Engineer",
-            "company": "ML Artika (formerly MobileLive)",
+            "company": "ML arteka (formerly MobileLive)",
             "date": "Mar 2024 - Present",
-            "description": "Leading modernization across enterprise applications through .NET 8 migrations, GraphQL integrations, Angular micro-frontends, React upgrades, Single Sign-On, API design, architecture, technical estimation, and cross-team engineering practices."
+            "description": "Modernizing enterprise applications through .NET 8 migrations, Angular micro-frontends, React architecture upgrades, Shopify REST-to-GraphQL migrations, Single Sign-On, API modernization, database and cloud design, technical estimation, and cross-team engineering leadership."
         },
         {
             "title": "Senior Software Engineer",
             "company": "Strategic Systems International",
-            "date": "Apr 2021 - Feb 2024",
-            "description": "Delivered reusable microservices and application modules with ASP.NET Core, Angular, NHibernate, Entity Framework, SQL Server, and PostgreSQL. Built Azure deployment automation and supported AWS deployments using ECS, EKS, S3, and Fargate."
+            "date": "May 2021 - Feb 2024",
+            "description": "Built and maintained confidential enterprise applications with C#, ASP.NET Core, Angular, TypeScript, NHibernate, Entity Framework, SQL Server, and PostgreSQL. Designed APIs and reusable components, improved performance, automated delivery with Azure Pipelines, supported AWS deployments, reviewed code, and mentored engineers."
         },
         {
             "title": "Visiting Faculty",
-            "company": "EVS",
-            "date": "2021 - Present",
-            "description": "Shared practical software-engineering knowledge through instruction and mentoring across frontend fundamentals, Angular, .NET, and application development."
+            "company": "EVS Professional Training Institute",
+            "date": "Apr 2021 - May 2024",
+            "description": "Delivered professional training in .NET, Angular, and web development while preparing developers for industry work through practical engineering guidance, mentoring, and career consultation."
         },
         {
             "title": "Full Stack Developer",
-            "company": "Freelance (Offsite)",
-            "date": "Sep 2020 - May 2021",
-            "description": "Delivered cryptocurrency wallet integrations, cloud-based file sharing, management systems, Android utilities, and browser extensions using .NET, Angular, GCP, and Redis."
+            "company": "Freelance (Self-employed)",
+            "date": "Feb 2020 - May 2021",
+            "description": "Owned requirements, architecture, implementation, and delivery for client solutions including blockchain wallet integration, cloud-based file sharing, learning and management platforms, Android utilities, and browser extensions using .NET, Angular, GCP, and Redis."
         },
         {
-            "title": "Full-Stack Developer",
+            "title": "Full Stack Developer",
             "company": "Douxl Technologies",
             "date": "Aug 2019 - Feb 2020",
-            "description": "Developed and maintained a finance ERP and multi-tenant garage-management SaaS using ASP.NET Core, Angular, SQL Server, Docker, Google Maps, Kendo UI, and Azure DevOps."
+            "description": "Developed and maintained a finance ERP and SaaS garage-management platform using ASP.NET Core, Angular, Entity Framework, SQL Server, Docker, Google Maps, Kendo UI, and Azure DevOps in a distributed remote team."
         },
         {
             "title": "Junior Software Developer",
             "company": "CyberSoft North America Inc",
             "date": "Jan 2019 - Jul 2019",
-            "description": "Built Angular applications, Azure-hosted solutions, customer-feedback systems, digital-signage applications, ASP.NET Core APIs, Xamarin.Android, and WPF components."
+            "description": "Built Angular applications with geospatial tracking and custom routing, ASP.NET Core APIs, Azure-hosted solutions, customer-feedback and digital-signage systems, Xamarin.Android applications, and WPF components."
         }
     ],
     "skills": [
@@ -70,24 +71,24 @@
             "description": ""
         },
         {
-            "title": "Platform Architecture",
-            "percentage": "90",
+            "title": "Angular, React & TypeScript",
+            "percentage": "92",
             "description": ""
         },
         {
-            "title": "Cloud Architecture",
+            "title": "Solutions & Application Architecture",
             "percentage": "90",
-            "description": "Azure & AWS"
+            "description": "System design, APIs & data"
         },
         {
-            "title": "Angular & React",
-            "percentage": "90",
-            "description": ""
+            "title": "Azure, AWS & Cloud Modernization",
+            "percentage": "88",
+            "description": "Architecture, migration & delivery"
         },
         {
             "title": "Identity & API Integration",
-            "percentage": "85",
-            "description": "SSO, REST, GraphQL & gRPC"
+            "percentage": "88",
+            "description": "OAuth/OIDC, SSO, REST, GraphQL & gRPC"
         },
         {
             "title": "Containers & CI/CD",
