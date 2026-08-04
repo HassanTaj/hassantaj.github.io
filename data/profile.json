@@ -2,98 +2,97 @@
     "name": "Hassan Taj",
     "firstName": "Hassan",
     "lastName": "Taj",
-    "subname": "Consultant and Mentor",
-    "profileImage": "https://rustfs.perspective-v.com/public/perspective-v/identity/user_profile_images/hassan.webp",
-    "discord_url": "https://discord.com/users/hassantaj",
+    "subname": "Platform Engineering & Cloud Architecture",
+    "profileImage": "./data/profile.webp",
+    "discord_url": "",
     "github_url": "https://github.com/HassanTaj",
-    "linkedin_url": "https://pk.linkedin.com/in/hassan-taj",
-    "whatsapp_url": "https://wa.me/+923249845044",
+    "linkedin_url": "https://www.linkedin.com/in/hassan-taj/",
+    "whatsapp_url": "",
     "email": "hassantaj01@outlook.com",
-    "phone": "+92 324 9845044",
-    "address": "Lahore, Punjab",
+    "phone": "",
+    "address": "Lahore, Pakistan",
     "residence": "Pakistan",
     "freelance": "",
-    "overview": "I am a tech enthusiast with a hunger for knowledge and good problem-solving skills; looking forward to learning new technologies and making a mark in the market. Having a good understanding of Full Stack Web Development using Microsoft Dotnet Development Stack, Azure Cloud (CI/CD, Containers/VMs, Function Apps, etc.)",
-    "about_intro": "In the industry since 2017, Worked on multiple technologies, providing end-to-end solutions. Over the years, I worked with teams and projects of varying sizes allowing me to work on different technologies and domains such as Management Systems, Crypto, Fintech, Healthcare, etc.",
-    "about_tech": "I had the pleasure of working on includes Angular, .NET (MVC, WebAPI, GraphQL, GRPC), and BlockChain, along with the cloud technologies such as GCP and AWS but mainly Microsoft Azure. I've had the pleasure of earning my Microsoft Certificate as well.",
-    "about_desc": "Furthermore, I've been a part of EVS since the beginning of my career. It allowed me to share my skills and knowledge and provide training for various technologies such as Fundamentals of Front-End Web Development, Angular and .NET, etc.",
+    "overview": "Senior Software Engineer and Microsoft Certified Azure Solutions Architect Expert focused on platform engineering, cloud architecture, identity, distributed systems, and the modernization of enterprise software.",
+    "about_intro": "I have 7+ years of experience delivering enterprise applications, cloud solutions, and modernization initiatives. My work has evolved from building individual features to designing the platforms, integrations, and engineering practices that enable teams to deliver reliable software.",
+    "about_tech": "My implementation background is primarily in .NET, Angular, React, and TypeScript, supported by experience with Azure, AWS, microservices, GraphQL, gRPC, API gateways, databases, containers, CI/CD, and modern identity standards.",
+    "about_desc": "I care about the full lifecycle of a system: architecture, security, deployment, observability, recovery, documentation, and developer experience. I also explore specification-driven and AI-assisted workflows that improve engineering quality without replacing sound technical judgment.",
     "subtitles": [
-        "Trainer & Mentor",
-        "Problem Solver",
         "Senior Software Engineer",
-        "Microsoft Certified: Azure Solutions Architect Expert",
-        "Microsoft Certified: Azure Administrator Associate",
-        "Microsoft Certified: Azure Developer Associate",
-        "Tech Evangelist"
+        "Platform Engineering",
+        "Cloud Architecture",
+        "Identity & Access Management",
+        "Distributed Systems",
+        "AI-Assisted Engineering"
     ],
     "experiences": [
         {
             "title": "Senior Software Engineer",
-            "company": "mobileLive",
-            "date": "2024-Present",
-            "description": ""
+            "company": "ML Artika (formerly MobileLive)",
+            "date": "Mar 2024 - Present",
+            "description": "Leading modernization across enterprise applications through .NET 8 migrations, GraphQL integrations, Angular micro-frontends, React upgrades, Single Sign-On, API design, architecture, technical estimation, and cross-team engineering practices."
         },
         {
             "title": "Senior Software Engineer",
             "company": "Strategic Systems International",
-            "date": "2021-2024",
-            "description": ""
+            "date": "Apr 2021 - Feb 2024",
+            "description": "Delivered reusable microservices and application modules with ASP.NET Core, Angular, NHibernate, Entity Framework, SQL Server, and PostgreSQL. Built Azure deployment automation and supported AWS deployments using ECS, EKS, S3, and Fargate."
         },
         {
             "title": "Visiting Faculty",
             "company": "EVS",
-            "date": "2021-Present",
-            "description": ""
+            "date": "2021 - Present",
+            "description": "Shared practical software-engineering knowledge through instruction and mentoring across frontend fundamentals, Angular, .NET, and application development."
         },
         {
             "title": "Full Stack Developer",
             "company": "Freelance (Offsite)",
-            "date": "2020-2021",
-            "description": ""
+            "date": "Sep 2020 - May 2021",
+            "description": "Delivered cryptocurrency wallet integrations, cloud-based file sharing, management systems, Android utilities, and browser extensions using .NET, Angular, GCP, and Redis."
         },
         {
             "title": "Full-Stack Developer",
             "company": "Douxl Technologies",
-            "date": "2019-2020",
-            "description": ""
+            "date": "Aug 2019 - Feb 2020",
+            "description": "Developed and maintained a finance ERP and multi-tenant garage-management SaaS using ASP.NET Core, Angular, SQL Server, Docker, Google Maps, Kendo UI, and Azure DevOps."
         },
         {
             "title": "Junior Software Developer",
             "company": "CyberSoft North America Inc",
-            "date": "2019-2019",
-            "description": ""
+            "date": "Jan 2019 - Jul 2019",
+            "description": "Built Angular applications, Azure-hosted solutions, customer-feedback systems, digital-signage applications, ASP.NET Core APIs, Xamarin.Android, and WPF components."
         }
     ],
     "skills": [
         {
-            "title": ".NET Core",
+            "title": ".NET & ASP.NET Core",
             "percentage": "95",
             "description": ""
         },
         {
-            "title": "Angular",
-            "percentage": "95",
+            "title": "Platform Architecture",
+            "percentage": "90",
             "description": ""
         },
         {
-            "title": "MSSQL",
+            "title": "Cloud Architecture",
+            "percentage": "90",
+            "description": "Azure & AWS"
+        },
+        {
+            "title": "Angular & React",
+            "percentage": "90",
+            "description": ""
+        },
+        {
+            "title": "Identity & API Integration",
             "percentage": "85",
-            "description": ""
+            "description": "SSO, REST, GraphQL & gRPC"
         },
         {
-            "title": "C Sharp",
-            "percentage": "95",
-            "description": ""
-        },
-        {
-            "title": "Xamarin, MAUI",
-            "percentage": "75",
-            "description": ""
-        },
-        {
-            "title": "Azure Cloud",
-            "percentage": "70",
-            "description": ""
+            "title": "Containers & CI/CD",
+            "percentage": "85",
+            "description": "Docker, Traefik & delivery automation"
         }
     ]
 }
