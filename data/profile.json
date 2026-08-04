@@ -1,0 +1,99 @@
+{
+    "name": "Hassan Taj",
+    "firstName": "Hassan",
+    "lastName": "Taj",
+    "subname": "Consultant and Mentor",
+    "profileImage": "https://rustfs.perspective-v.com/public/perspective-v/identity/user_profile_images/hassan.webp",
+    "discord_url": "https://discord.com/users/hassantaj",
+    "github_url": "https://github.com/HassanTaj",
+    "linkedin_url": "https://pk.linkedin.com/in/hassan-taj",
+    "whatsapp_url": "https://wa.me/+923249845044",
+    "email": "hassantaj01@outlook.com",
+    "phone": "+92 324 9845044",
+    "address": "Lahore, Punjab",
+    "residence": "Pakistan",
+    "freelance": "",
+    "overview": "I am a tech enthusiast with a hunger for knowledge and good problem-solving skills; looking forward to learning new technologies and making a mark in the market. Having a good understanding of Full Stack Web Development using Microsoft Dotnet Development Stack, Azure Cloud (CI/CD, Containers/VMs, Function Apps, etc.)",
+    "about_intro": "In the industry since 2017, Worked on multiple technologies, providing end-to-end solutions. Over the years, I worked with teams and projects of varying sizes allowing me to work on different technologies and domains such as Management Systems, Crypto, Fintech, Healthcare, etc.",
+    "about_tech": "I had the pleasure of working on includes Angular, .NET (MVC, WebAPI, GraphQL, GRPC), and BlockChain, along with the cloud technologies such as GCP and AWS but mainly Microsoft Azure. I've had the pleasure of earning my Microsoft Certificate as well.",
+    "about_desc": "Furthermore, I've been a part of EVS since the beginning of my career. It allowed me to share my skills and knowledge and provide training for various technologies such as Fundamentals of Front-End Web Development, Angular and .NET, etc.",
+    "subtitles": [
+        "Trainer & Mentor",
+        "Problem Solver",
+        "Senior Software Engineer",
+        "Microsoft Certified: Azure Solutions Architect Expert",
+        "Microsoft Certified: Azure Administrator Associate",
+        "Microsoft Certified: Azure Developer Associate",
+        "Tech Evangelist"
+    ],
+    "experiences": [
+        {
+            "title": "Senior Software Engineer",
+            "company": "mobileLive",
+            "date": "2024-Present",
+            "description": ""
+        },
+        {
+            "title": "Senior Software Engineer",
+            "company": "Strategic Systems International",
+            "date": "2021-2024",
+            "description": ""
+        },
+        {
+            "title": "Visiting Faculty",
+            "company": "EVS",
+            "date": "2021-Present",
+            "description": ""
+        },
+        {
+            "title": "Full Stack Developer",
+            "company": "Freelance (Offsite)",
+            "date": "2020-2021",
+            "description": ""
+        },
+        {
+            "title": "Full-Stack Developer",
+            "company": "Douxl Technologies",
+            "date": "2019-2020",
+            "description": ""
+        },
+        {
+            "title": "Junior Software Developer",
+            "company": "CyberSoft North America Inc",
+            "date": "2019-2019",
+            "description": ""
+        }
+    ],
+    "skills": [
+        {
+            "title": ".NET Core",
+            "percentage": "95",
+            "description": ""
+        },
+        {
+            "title": "Angular",
+            "percentage": "95",
+            "description": ""
+        },
+        {
+            "title": "MSSQL",
+            "percentage": "85",
+            "description": ""
+        },
+        {
+            "title": "C Sharp",
+            "percentage": "95",
+            "description": ""
+        },
+        {
+            "title": "Xamarin, MAUI",
+            "percentage": "75",
+            "description": ""
+        },
+        {
+            "title": "Azure Cloud",
+            "percentage": "70",
+            "description": ""
+        }
+    ]
+}

@@ -1,34 +1,36 @@
 $(function () {
-    const consts = {
-        what_i_am_doing: "whatiamdoing",
-        skills: "skills",
-        languages: "languages",
-        experiences: "experiences",
-        education: "education",
-        projects: "projects",
-        certifications: "certifications"
-    };
+    const profileDataUrl = './data/profile.json';
+    const profileTemplateUrl = './data/content.html';
 
-    fetch('https://api.perspective-v.com/graph/v1/resume/GetByAccessToken', {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "*/*"
-        },
-        body: JSON.stringify("/vw5Hk1jLkGiBjvnd5xS+g==")
+    Promise.all([
+        fetch(profileDataUrl),
+        fetch(profileTemplateUrl)
+    ])
+    .then(async ([profileResponse, templateResponse]) => {
+        if (!profileResponse.ok) {
+            throw new Error(`Unable to load ${profileDataUrl}: ${profileResponse.status}`);
+        }
+
+        if (!templateResponse.ok) {
+            throw new Error(`Unable to load ${profileTemplateUrl}: ${templateResponse.status}`);
+        }
+
+        return Promise.all([
+            profileResponse.json(),
+            templateResponse.text()
+        ]);
     })
-    .then(res => res.json())
-    .then(response => {
-        var data = JSON.parse(response.content.jsonData);
-        var template = response.content.htmlTemplate;
+    .then(([data, template]) => {
         var tokens = Object.keys(data);
         var arrayDataToAppend = [];
         if (!!tokens.length) {
             Array.from(tokens).forEach(token => {
-                template = template.replaceAll(`#${token}#`, data[token])
                 if (data[token] instanceof Array) {
                     arrayDataToAppend.push(token);
+                    return;
                 }
+
+                template = template.replaceAll(`#${token}#`, data[token] ?? '');
             });
         }
         $('#container').html($.parseHTML(template));
@@ -39,6 +41,18 @@ $(function () {
         });
 
         App.InitTheme();
+    })
+    .catch(error => {
+        console.error('Unable to load the local portfolio content.', error);
+        $('.preloader').hide();
+        $('#container').html(`
+            <main style="min-height: 100vh; display: grid; place-items: center; padding: 2rem; text-align: center;">
+                <div>
+                    <h1>Portfolio content is temporarily unavailable.</h1>
+                    <p>Please refresh the page or try again shortly.</p>
+                </div>
+            </main>
+        `);
     });
 
     function tokenTemplateArrayHandler(token, data) {
