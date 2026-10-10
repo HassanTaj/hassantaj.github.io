@@ -1,6 +1,8 @@
 name: Deploy static portfolio to GitHub Pages
 
 on:
+  pull_request:
+    branches: [master]
   push:
     branches: [master]
   workflow_dispatch:
@@ -22,10 +24,12 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request'
         with:
           path: ./out
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:
