@@ -7,10 +7,12 @@ export function TypedHeadline({ phrases }: { phrases: string[] }) {
   const textRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    if (!textRef.current || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (!textRef.current || !phrases.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
     }
 
+    // Typed.js adds existing text to its sequence, so clear the static fallback first.
+    textRef.current.textContent = "";
     const typed = new Typed(textRef.current, {
       strings: phrases,
       typeSpeed: 48,
@@ -27,7 +29,7 @@ export function TypedHeadline({ phrases }: { phrases: string[] }) {
 
   return (
     <span ref={textRef} aria-live="off">
-      Senior Software Engineer | Solutions Architecture
+      {phrases[0] ?? ""}
     </span>
   );
 }
