@@ -46,6 +46,10 @@ Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 
 Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
+## Deploy with GitHub Pages
+
+The portfolio is published from `master` by `.github/workflows/pages.yml` using GitHub Actions. Configure the custom domain in the repository's **Settings → Pages**; a `CNAME` file is not used to configure a site published with a custom Actions workflow. For this site, the custom domain is `hassan.taj.contact`, and its DNS CNAME should point directly to `hassantaj.github.io`.
+
 ## Documentation
 
 Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
