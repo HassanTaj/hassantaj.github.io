@@ -67,3 +67,8 @@
   --scheme-neutral-600-50: rgba(137,152,159,0.5);
   /*
 }*/
+
+.contact-focus-ring:focus-within > div {
+  outline: 2px solid var(--brand-solid-strong);
+  outline-offset: 2px;
+}

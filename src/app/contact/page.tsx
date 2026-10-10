@@ -82,7 +82,7 @@ export default function Contact() {
                 label="Full name"
                 placeholder="eg.: Your Name"
                 required
-                focusRing
+                className="contact-focus-ring"
               />
               <Input
                 id="email"
@@ -91,7 +91,7 @@ export default function Contact() {
                 type="email"
                 placeholder="example@domain.com"
                 required
-                focusRing
+                className="contact-focus-ring"
               />
               <Textarea
                 id="message"
@@ -100,7 +100,7 @@ export default function Contact() {
                 placeholder="To Write"
                 required
                 lines={6}
-                focusRing
+                className="contact-focus-ring"
               />
               <Button type="submit" variant="primary" arrowIcon>
                 Send Message
