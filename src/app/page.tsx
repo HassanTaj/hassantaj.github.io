@@ -243,7 +243,7 @@ export default function Home() {
       <Column fillWidth gap="m" paddingX="l">
         <Column gap="8">
           <Heading as="h2" variant="display-strong-xs">
-            Platform Engineering Work
+            Featured Work
           </Heading>
           <Text onBackground="neutral-weak">
             Secure infrastructure, reliable delivery, and human-reviewed automation
@@ -253,9 +253,9 @@ export default function Home() {
       <RevealFx translateY="16" delay={0.6}>
         <Projects
           include={[
+            "ai-native-platform-ops",
             "production-platform-reference",
             "zero-trust-homelab",
-            "ai-native-platform-ops",
           ]}
         />
       </RevealFx>

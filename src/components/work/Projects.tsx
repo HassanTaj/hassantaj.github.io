@@ -26,7 +26,7 @@ export function Projects({ range, exclude, include }: ProjectsProps) {
   const orderedProjects = include
     ? allProjects
     : allProjects.sort((a, b) => {
-        return (
+        return Number(b.metadata.featured) - Number(a.metadata.featured) || (
           new Date(b.metadata.publishedAt || 0).getTime() -
           new Date(a.metadata.publishedAt || 0).getTime()
         );
