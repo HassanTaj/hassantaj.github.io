@@ -67,14 +67,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Reusable .NET Application Platform</strong>{" "}
+        <strong className="ml-4">AI-Native Platform Operations</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           GitHub Repository
         </Text>
       </Row>
     ),
-    href: "https://github.com/perspective-v/application-foundation",
+    href: "https://github.com/HassanTaj/ai-native-platform-ops",
   },
   subline: <>{profile.overview}</>,
 };
