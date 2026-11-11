@@ -1,0 +1,36 @@
+---
+title: "Librarian — AI-Enabled Software Engineering"
+publishedAt: "2026-11-11"
+featured: true
+summary: "A Git-connected documentation application built through a specification-driven, AI-assisted engineering workflow. Combines a Next.js reader, repository synchronization, access control, encrypted instance configuration, and automated verification."
+image: "/images/projects/librarian/banner.svg"
+images: ["/images/projects/librarian/banner.svg"]
+link: "https://github.com/HassanTaj/librarian"
+---
+
+Librarian is a Git-connected documentation reader and catalog administration application. Source repositories remain the authoring system, while Librarian provides a web reading experience backed by persistent documentation snapshots.
+
+## The engineering problem
+
+Publishing documentation from Git involves more than rendering Markdown. The application needs to synchronize repository content, enforce reader and administrator access, manage provider credentials, and keep instance configuration durable across restarts and upgrades.
+
+Librarian brings these concerns together using Next.js, Fumadocs, Auth.js with Zitadel, MongoDB, and a read-only GitHub App.
+
+## AI-enabled software engineering
+
+I use Librarian as a practical example of AI-assisted software delivery: turning requirements into specifications, implementation plans, reviewable changes, and automated checks. The repository preserves the specifications, task ledgers, and verification records alongside the application code.
+
+AI assistance supports implementation and debugging within that documented workflow. I retain responsibility for architecture, access boundaries, reviewing changes, and deciding when operational actions are authorized. The AI-enabled aspect describes the engineering process used to build Librarian.
+
+## What the project demonstrates
+
+- **Application engineering:** a documentation reader, catalog administration, repository synchronization, and persistent snapshots.
+- **Identity and access:** authentication through Auth.js and Zitadel, with protected instance administration.
+- **Configuration and recovery:** encrypted application configuration in MongoDB, credential rotation, and documented upgrade and recovery procedures.
+- **Verification:** automated unit, browser component, and integration tests, with coverage checks in CI and recorded acceptance work.
+
+## Current status
+
+Librarian is under active development in a public GitHub repository. Its task ledger distinguishes implementation and local verification from remaining operational and release checks; the project is presented here as an evolving engineering example.
+
+[Explore the repository](https://github.com/HassanTaj/librarian) · [Read the implementation and verification ledger](https://github.com/HassanTaj/librarian/blob/main/specs/002-instance-configuration/tasks.md)
