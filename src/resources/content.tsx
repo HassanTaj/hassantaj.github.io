@@ -67,14 +67,14 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">AI-Native Platform Operations</strong>{" "}
+        <strong className="ml-4">Librarian · AI-Enabled Software Engineering</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          GitHub Repository
+          View case study
         </Text>
       </Row>
     ),
-    href: "https://github.com/HassanTaj/ai-native-platform-ops",
+    href: "/work/librarian",
   },
   subline: <>{profile.overview}</>,
 };
