@@ -246,13 +246,14 @@ export default function Home() {
             Featured Work
           </Heading>
           <Text onBackground="neutral-weak">
-            Secure infrastructure, reliable delivery, and human-reviewed automation
+            Software engineering, secure infrastructure, and human-reviewed automation
           </Text>
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
         <Projects
           include={[
+            "librarian",
             "ai-native-platform-ops",
             "production-platform-reference",
             "zero-trust-homelab",
